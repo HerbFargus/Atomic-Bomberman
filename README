@@ -1,0 +1,10 @@
+* Compiliation on Win32:
+
+ - Install Cygwin
+ - Install MinGW
+ - Download SDL development packages for MinGW (SDL-devel-1.2.5a-mingw32.tar.gz)
+   + copy include files / libraries / aclocals / sdl-config in the appropriate directories
+ - Download and install SDL_sound (SDL_sound-1.0.0.tar.gz)
+
+
+(2003-05-13 Gregor Mitsch <gregormitsch@gmx.de>)

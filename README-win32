@@ -1,0 +1,34 @@
+* Compiliation on Win32:
+
+ - Install Cygwin
+ - Install MinGW
+ - Download SDL development packages for MinGW (SDL-devel-1.2.5a-mingw32.tar.gz)
+   + copy include files / libraries / aclocals / sdl-config in the appropriate directories
+   + modify sdl.m4 !
+   + (make sure SDL.dll is present)
+   + install SDL_sound (copy SDL_sound.h into MinGW's include directory ./SDL)
+   + install SDL_image (copy SDL_image.h into MinGW's include directory ./SDL)
+(   + copy libSDL_sound.a into the /lib directory   (mv SDL_sound.lib libSDL_sound.a)
+   + copy libSDL_image.a into the /lib directory
+   + copy libvorbis.a into the /lib directory
+   + copy libvorbisfile.a into the /lib directory)
+   + install libsigc++ 1.0.3: see /dev
+
+ - Download and install SDL_sound (SDL_sound-1.0.0.tar.gz)
+
+
+(2003-05-13 Gregor Mitsch <gregormitsch@gmx.de>)
+(2003-05-14 Gregor Mitsch <gregormitsch@gmx.de>)
+
+
+
+* Visual Studio .NET
+
+copy /include/SDL     to C:\Programme\Microsoft Visual Studio .NET 2003\Vc7\include
+
+(copy /include/sigc++  to C:\Programme\Microsoft Visual Studio .NET 2003\Vc7\include
+(copy /lib/sigc++      to C:\Programme\Microsoft Visual Studio .NET 2003\Vc7\lib
+(... does not work
+
+copy ogg.lib, SDL_image.lib, SDL_sound.lib, vorbis.lib, vorbisfile.lib, SDL.lib, SDLmain.lib
+     to C:\Programme\Microsoft Visual Studio .NET 2003\Vc7\lib

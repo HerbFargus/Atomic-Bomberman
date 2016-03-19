@@ -1,0 +1,170 @@
+2003-07-06 Dominik Haumann <haumann@gmdsoft.de>
+
+	* src/"some cpp/h files": Nemespace declaration moved.
+	* src/guilistview.[cpp,h]: v0.2: mouse support missing.
+
+2003-07-06  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* src/render.cpp (Render): Constructor definition added.
+	* src/render.h (class Render): Constructor / Destructor
+	declarations added.
+
+	* src/state.cpp: Namespace declaration moved.
+	* src/stategame.cpp: Namespace declaration moved.
+	* src/inputmouse.cpp: Namespace declaration moved .
+	* src/inputmanager.cpp: Namespace declaration moved.
+	* src/inputkeyboard.cpp: Namespace declaration moved.
+	* src/inputjoystick.cpp: Namespace declaration moved.
+	* src/cellflame.cpp: Namespace declaration moved.
+	* src/cellbreakable.cpp: Namespace declaration moved.
+	* src/cellbomb.cpp: Namespace declaration moved.
+
+2003-07-06 Dominik Haumann <haumann@gmdsoft.de>
+
+	* data/images/gui/sb_*: width smaller: 25 to 20!
+	* src/render.cpp: added destructor to delete with
+	"new" allocated memory! No mem leak any more in this
+	file.
+
+2003-07-06 Dominik Haumann <haumann@gmdsoft.de>
+
+	* src/statemainmenu.h; src/stateconfigurekeys.h:
+	moved 'using namespace gui' and 'using namespace SigC'
+	to namespace state
+
+2003-07-06  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* src/render.cpp: some FIXMEs
+	* src/Makefile.am: some adjustments
+	
+2003-06-26  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* configure.in: New enable/disable options added.
+	* src/Makefile.am: DISABLE_LIBSIGC conditional added.
+	* src/main.cpp: #if HAVE_CONFIG_H
+	* src/state.cpp: #if HAVE_CONFIG_H
+	* src/stateconfigurekeys.h: #if HAVE_CONFIG_H
+	* src/stateconfigurekeys.cpp: #ifndef DISABLE_LIBSIGC
+	* src/statemainmenu.h: #if HAVE_CONFIG_H
+	* src/statemainmenu.cpp: #ifndef DISABLE_LIBSIGC
+	* src/stateselectgame.h: #if HAVE_CONFIG_H
+	* src/stateselectgame.cpp: #ifndef DISABLE_LIBSIGC
+
+2003-06-24  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* configure.in: New enable/disable options added.
+
+2003-06-22  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* Added temporary autotool files to .cvsignore.
+
+2003-06-19 Dominik Haumann <haumann@gmdsoft.de>
+
+	* data/config/soundlist.res: fixed bug:
+	renamed "NOLASSES" to "MOLASSES".
+	* src/listreader.cpp: added warning message
+	if "section" does not exist.
+	-> will help to debug much easier!
+
+2003-06-01  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* autom4te.cache/.cvsignore: added.
+
+	* data/images/gui/*: added.
+	* data/images/*: added.
+
+2003-05-28  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* sigc++/*: removed.
+
+2003-05-23 Dominik Haumann <haumann@gmdsoft.de>
+
+	* src/guilistview.*: added gui::ListView; not implemented
+	yet. Added guilistview.* to src/Makefile.am
+
+	* src/soundtotext.cpp: replaced stl's transform with
+	a for-loop. Now compiles with gcc 3.3.
+
+	* src/guicontainer.cpp: fixed bug which made ab crash!
+	* src/stateconfigurekeys.cpp/h:
+	added complete functionality
+
+2003-05-20  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* src/soundtotext.cpp (load_from_file):
+	function call re-added
+
+2003-05-20 Dominik Haumann <haumann@gmdsoft.de>
+
+	* src/imagelist.cpp: compile fix for gcc 3.3
+	* src/render.cpp: gcc3.3: added #include <stdarg.h>
+	* configure.in: added option --enable-win32
+	* src/Makefile: os independent: if WIN32 ... else ... endif
+
+2003-05-17  Gregor Mitsch  <gregormitsch@gmx.de>
+
+	* bootstrap: New, bootstraps the project.
+
+	* src/soundtotext.cpp (load_from_file):
+	Temporary removed STL function
+
+	* src/sound.cpp: #include statement for MinGW's g++ added.
+	* src/guienums.h: Added newline at end of file.
+	* src/guibase.h: Header changed for local libsigc++.
+
+	* configure.in: SDL added.
+
+2003-05-15 Dominik Haumann <haumann@gmdsoft.de>
+
+	* stateconfigurekeys: improved
+
+2003-05-15 Dominik Haumann <haumann@gmdsoft.de>
+
+	* stateconfigurekeys: added gui elements,
+	"ESC" switches back to statemainmenu.
+
+2003-05-14 Dominik Haumann <haumann@gmdsoft.de>
+
+	* stateintro: c++ coding conventions applied.
+
+2003-05-13 Dominik Haumann <haumann@gmdsoft.de>
+
+	* player.cpp: voi -> void
+	* stateintro: play SND_MAIN_MENU on on_exit,
+	now smooth sound-switch to statemainmenu
+	* statemainmenu: play SND_MAIN_MENU if it is
+	not already running
+
+2003-05-13 Gregor Mitsch <gregormitsch@gmx.de>
+
+	* Some c++ coding conventions applied.
+	* README updated.
+
+2003-05-13 Dominik Haumann <haumann@gmdsoft.de>
+
+	* soundlist.res: changed .wav to .ogg
+	* guispinedit: changed behaviour
+
+2003-05-12 Gregor Mitsch <gregormitsch@gmx.de>
+
+	* Directory 'data/config' added.
+
+2003-05-12 Dominik Haumann <haumann@gmdsoft.de>
+
+	* listreader: moved configreader to listreader,
+	much better name for the class!
+
+2003-05-12 Gregor Mitsch <gregormitsch@gmx.de>
+
+	* Some c++ coding conventions applied.
+
+2003-05-10 Dominik Haumann <haumann@gmdsoft.de>
+	
+	* linker: -logg -lvorbis -lvorbisfile -lSDL_sound
+	* Sound: added ogg&mp3-support to Sound class
+	* Sound: replaced all "SDL_snd" with "Sound"
+	* SDL_snd: replaced all "sdl_snd.h" with "sound.h"
+
+2003-05-07 Dominik Haumann <haumann@gmdsoft.de>
+	
+	* import of ab

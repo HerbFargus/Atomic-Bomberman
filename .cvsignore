@@ -1,0 +1,12 @@
+configure
+aclocal.m4
+config.guess
+config.sub
+ltmain.sh
+config.h.in
+depcomp
+install-sh
+Makefile.in
+missing
+mkinstalldirs
+stamp-h.in

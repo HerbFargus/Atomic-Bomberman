@@ -1,0 +1,104 @@
+Packages:
+- libsdl1.2-dev
+- libsdl-image1.2-dev
+
+- SDL_sound (TODO):
+$ cvs -d:pserver:anonymous@cvs.icculus.org:/cvs/cvsroot login 
+$ (password is "anonymous", without the quotes.)
+$ cvs -z3 -d:pserver:anonymous@cvs.icculus.org:/cvs/cvsroot co SDL_sound 
+$ ...
+
+- libsigc++ version 1.0.4
+
+TODO:
+- copied 'sigc++config.h' into directory 'src'
+- wieder geloescht (das macht jetzt ein PATH befehl)
+
+- libsdl1.2-dev (= OpenGL)
+
+
+- use new version of sdl.m4
+
+
+/////////////////////////////////////////////////////////////////////
+
+====================================
+What you need to compile ab:
+
+1. libsigc++ 1.0.x
+2. ogg
+3. vorbis and vorbisfile
+4. SDL 1.2.x
+5. SDL_image
+6. SDL_sound
+
+-----------------------------------------------------------
+1. libsigc++ 1.0.x
+- libsigc++ version 1.0.x
+- copied 'sigc++config.h' into directory 'src'
+you do not have to do this: copy it in the global include dir
+
+# Debian 3.0:
+$ apt-get install libsigc++-dev
+
+-----------------------------------------------------------
+2. ogg library
+Download version 1.0.x the ogg library from www.xiph.org.
+Extract with tar xvfz tile.tgz
+cd into the new directory.
+type:
+  ./configure [--prefix=/usr/]
+  make
+  make install
+
+# Debian 3.0
+$ apt-get install libogg-dev
+
+
+-----------------------------------------------------------
+3. vorbis and vorbisfile
+Download from www.xiph.org and do the following:
+Extract with tar xvfz tile.tgz
+cd into the new directory.
+type:
+  ./configure [--prefix=/usr/]
+  make
+  make install
+
+# Debian 3.0
+$ apt-get install libvorbis-dev
+
+-----------------------------------------------------------
+4. SDL
+Get a copy from www.libsdl.org...
+
+-----------------------------------------------------------
+5. SDL_image
+see 4.
+
+-----------------------------------------------------------
+6. SDL_sound 1.0.x (need ogg and vorbis already installed)
+Get SDL_sound:
+  cvs -d:pserver:anonymous@cvs.icculus.org:/cvs/cvsroot login
+  (password is "anonymous", without the quotes.)
+  cvs -z3 -d:pserver:anonymous@cvs.icculus.org:/cvs/cvsroot co SDL_sound
+Then "cd SDL_sound" and type:
+
+$ ./bootstrap
+
+  ./configure [--prefix=/usr/] --disable-smpeg --disable-mikmod
+  # see ./configure --help. perhaps you have to disalbe much more if
+  # you do not have the corresponding libraries installed. Important is
+  # that you do NOT disable ogg and vorbis!
+  make
+  make install
+That's it!
+Look: Now there is a libSDL_sound.a and libSDL_sound.la in your lib directory
+      and the file SDL_sound.h is in your SDL/ directory! If not - you used the
+      wrong flags witch configure! You can leave out make install and copy the
+      files into the directories yourself.
+
+/////////////////////////////////////////////////////////////////////
+
+Gregor Mitsch <gregormitsch@gmx.de>
+Dominik Haumann <haumann@gmdsoft.de>
