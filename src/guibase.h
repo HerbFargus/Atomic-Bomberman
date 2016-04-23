@@ -25,7 +25,7 @@
 
 #include "guienums.h"
 
-#include <sigc++/signal_system.h>
+#include <sigc++/sigc++.h>
 
 typedef unsigned int UINT;
 

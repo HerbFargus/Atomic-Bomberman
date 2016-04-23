@@ -22,7 +22,7 @@
 
 #include "guibase.h"
 
-#include  <sigc++/signal_system.h>
+#include  <sigc++/sigc++.h>
 
 namespace gui
 {

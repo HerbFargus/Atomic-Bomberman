@@ -22,11 +22,7 @@
 
 #include "guibutton.h"
 
-#include <sigc++/signal_system.h>
-#include <sigc++/generator.h>
-#include <sigc++/rettype.h>
-#include <sigc++/bind.h>
-#include <sigc++/convert.h>
+#include <sigc++/sigc++.h>
 
 //#include <windows.h>
 

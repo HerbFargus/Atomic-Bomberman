@@ -7,6 +7,7 @@
 #else
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 #endif
 
 FileFinder::FileFinder ()

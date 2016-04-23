@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-echo "Bootstrapping \"AtomicBomberman Clone\"..."
-aclocal
-libtoolize --automake --copy --force
-autoheader
-automake --foreign --add-missing --copy
-autoconf

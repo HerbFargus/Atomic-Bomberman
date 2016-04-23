@@ -26,7 +26,7 @@
           
 #include "guibutton.h"
 
-#include <sigc++/signal_system.h>
+#include <sigc++/sigc++.h>
 
 #include <string>
 #include <vector>

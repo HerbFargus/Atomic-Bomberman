@@ -26,7 +26,7 @@
  #include "guicontainer.h"
  #include "guienums.h"
 
- #include <sigc++/signal_system.h>
+ #include <sigc++/sigc++.h>
  //#include "sigc++/slot.h"
 #endif // DISABLE_LIBSIGC
 
