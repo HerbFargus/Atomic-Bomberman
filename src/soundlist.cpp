@@ -6,6 +6,7 @@
 #include "globals.h"
 #include "mainconfig.h"
 
+#include <cstdlib>
 #include <iostream>
 #include <time.h>
 
