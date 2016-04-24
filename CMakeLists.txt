@@ -12,7 +12,8 @@ pkg_search_module(SIGC12 REQUIRED sigc++-1.2)
 
 ExternalProject_Add(SDL_sound
 	PREFIX ${CMAKE_CURRENT_BINARY_DIR}
-	DOWNLOAD_COMMAND hg clone -r stable-1.0 http://hg.icculus.org/icculus/SDL_sound/
+	HG_REPOSITORY http://hg.icculus.org/icculus/SDL_sound/
+	HG_TAG stable-1.0
 	BUILD_IN_SOURCE 1
 	CONFIGURE_COMMAND ./bootstrap
 		COMMAND ./configure
