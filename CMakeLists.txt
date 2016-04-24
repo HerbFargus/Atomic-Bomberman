@@ -20,6 +20,7 @@ ExternalProject_Add(SDL_sound
 			--disable-smpeg
 			--disable-mikmod
 			--disable-flac
+			--disable-speex
 			--prefix=${CMAKE_CURRENT_BINARY_DIR}/SDL_sound
 	BUILD_COMMAND make
 	INSTALL_COMMAND make install
