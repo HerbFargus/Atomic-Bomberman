@@ -1,68 +1,68 @@
-{ 
+frame { 
  map BMB1001.TGA 
  size 36 37 
  } 
-{ 
+frame { 
  map BMB1002.TGA 
  size 35 35 
  } 
-{ 
+frame { 
  map BMB1003.TGA 
  size 34 33 
  } 
-{ 
+frame { 
  map BMB1004.TGA 
  size 32 32 
  } 
-{ 
+frame { 
  map BMB1005.TGA 
  size 30 30 
  } 
-{ 
+frame { 
  map BMB1006.TGA 
  size 28 28 
  } 
-{ 
+frame { 
  map BMB1007.TGA 
  size 26 26 
  } 
-{ 
+frame { 
  map BMB1008.TGA 
  size 25 25 
  } 
-{ 
+frame { 
  map BMB1009.TGA 
  size 24 23 
  } 
-{ 
+frame { 
  map BMB1010.TGA 
  size 22 22 
  } 
-{ 
+frame { 
  map BMBC1.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC2.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC3.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC4.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC5.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC6.TGA 
  size 40 36 
  } 
-{ 
+frame { 
  map BMBC7.TGA 
  size 40 36 
  } 

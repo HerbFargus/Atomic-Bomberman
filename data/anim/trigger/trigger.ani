@@ -1,40 +1,40 @@
-{ 
+frame { 
  map DIGIB001.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB002.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB003.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB004.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB005.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB006.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB007.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB008.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB009.TGA 
  size 40 40 
  } 
-{ 
+frame { 
  map DIGIB010.TGA 
  size 40 40 
  } 

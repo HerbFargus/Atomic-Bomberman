@@ -1,20 +1,20 @@
-{
+frame {
 map ENDD1.TGA
 size 40 36
 }
-{
+frame {
 map ENDD2.TGA
 size 40 36
 }
-{
+frame {
 map ENDD3.TGA
 size 40 36
 }
-{
+frame {
 map ENDD4.TGA
 size 40 36
 }
-{
+frame {
 map ENDD5.TGA
 size 40 36
 }

@@ -1,56 +1,56 @@
-{
+frame {
    map WLKN0000.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0001.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0002.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0003.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0004.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0005.TGA
    size 110 110
  }
- {
+ frame {
    map WLKN0006.TGA
    size 110 110
  }
-  {
+  frame {
    map WLKN0007.TGA
    size 110 110
  }
-  {
+  frame {
    map WLKN0008.TGA
    size 110 110
  }
-  {
+  frame {
    map WLKN0009.TGA
    size 110 110
  }
-  {
+  frame {
    map WLKN0010.TGA
    size 110 110
- } {
+ } frame {
    map WLKN0011.TGA
    size 110 110
- } {
+ } frame {
    map WLKN0012.TGA
    size 110 110
- } {
+ } frame {
    map WLKN0013.TGA
    size 110 110
- } {
+ } frame {
    map WLKN00014.TGA
    size 110 110
  }

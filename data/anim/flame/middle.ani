@@ -1,20 +1,20 @@
-{
+frame {
 map SQUARE1.TGA
 size 40 36
 }
-{
+frame {
 map SQUARE2.TGA
 size 40 36
 }
-{
+frame {
 map SQUARE3.TGA
 size 40 36
 }
-{
+frame {
 map SQUARE4.TGA
 size 40 36
 }
-{
+frame {
 map SQUARE5.TGA
 size 40 36
 }

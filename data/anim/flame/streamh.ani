@@ -1,20 +1,20 @@
-{
+frame {
 map STREAM1.TGA
 size 40 36
 }
-{
+frame {
 map STREAM2.TGA
 size 40 36
 }
-{
+frame {
 map STREAM3.TGA
 size 40 36
 }
-{
+frame {
 map STREAM4.TGA
 size 40 36
 }
-{
+frame {
 map STREAM5.TGA
 size 40 36
 }
